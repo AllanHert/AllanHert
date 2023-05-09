@@ -1,6 +1,13 @@
-### Olá! Eu sou o Allan Hert 👋
+## Olá! Eu sou o Allan Hert 👋
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/allanhert/)
+
+### Status do Git:
+
+![Allan GitHub stats](https://github-readme-stats.vercel.app/api?username=AllanHert&show_icons=true&theme=dracula)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AllanHert&layout=donut)](https://github.com/AllanHert/AllanHert)
+
 
 ## Tecnologias que eu uso no meu dia
 
