@@ -53,12 +53,12 @@ A studio that takes a client from "we need a site" to a working operation: inter
 
 ## Stack
 
-**Languages** TypeScript · JavaScript · Python · SQL
-**Front end** React · Next.js · Tailwind · Framer Motion · GSAP
-**3D / graphics** Three.js · React Three Fiber · WebGL · GLSL
-**Back end** Node.js · REST APIs · Postgres · Drizzle · auth & multi-tenancy
-**AI & automation** LLM pipelines · multi-agent workflows · Make.com
-**Practice** Core Web Vitals budgets · accessibility · CI on Vercel
+- **Languages** — TypeScript · JavaScript · Python · SQL
+- **Front end** — React · Next.js · Tailwind · Framer Motion · GSAP
+- **3D / graphics** — Three.js · React Three Fiber · WebGL · GLSL
+- **Back end** — Node.js · REST APIs · Postgres · Drizzle · auth & multi-tenancy
+- **AI & automation** — LLM pipelines · multi-agent workflows · Make.com
+- **Practice** — Core Web Vitals budgets · accessibility · CI on Vercel
 
 ## How I work
 
@@ -69,5 +69,8 @@ The bar I hold everything to is that the work has to be defensible on load. A si
 ---
 
 <p align="center">
+  <sub>Available for studio engagements — sites, software, automation. <a href="mailto:contato@hertwave.com">contato@hertwave.com</a></sub>
+</p>
+
   <sub>Available for studio engagements — sites, software, automation. <a href="mailto:contato@hertwave.com">contato@hertwave.com</a></sub>
 </p>
