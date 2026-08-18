@@ -71,6 +71,6 @@ The bar I hold everything to is that the work has to be defensible on load. A si
 <p align="center">
   <sub>Available for studio engagements — sites, software, automation. <a href="mailto:contato@hertwave.com">contato@hertwave.com</a></sub>
 </p>
-
+<p align="center">
   <sub>Available for studio engagements — sites, software, automation. <a href="mailto:contato@hertwave.com">contato@hertwave.com</a></sub>
 </p>
