@@ -15,6 +15,17 @@ and the manual work gone. that's the studio.
 
 ---
 
+## Who I Am
+
+I'm a software engineer in São Paulo. I work across the whole line: the client
+conversation, the architecture, the shader, the deploy, and the call two months
+later when something breaks.
+
+I'm also finishing a law degree at Mackenzie, with internships at the São Paulo
+Public Prosecutor's Office and in capital markets. It is a stranger combination
+than it sounds, and it decides how I scope a project the moment it touches
+personal data or a contract.
+
 ## Work
 
 | project | what it is |
