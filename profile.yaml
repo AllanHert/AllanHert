@@ -1,0 +1,100 @@
+# Source of README.md. Edit this file, then run: python scripts/build_readme.py
+# The weekly workflow re-renders it, hides links to sites that are down and opens a PR when something changed.
+
+owner: AllanHert
+name: Allan Hert
+banner: assets/banner.png
+banner_alt: "Allan Hert, software engineer: full-stack and AI. Open to remote roles, São Paulo, UTC-3."
+
+links:
+  - {label: allanhert.com, url: "https://allanhert.com"}
+  - {label: LinkedIn, url: "https://www.linkedin.com/in/allanhert"}
+  - {label: X, url: "https://x.com/HertAllan"}
+  - {label: Email, url: "mailto:allanhert@gmail.com"}
+  - {label: Hertwave, url: "https://hertwave.com"}
+
+about: |
+  I build software end to end: the product decision, the architecture, the interface, the deploy and the fix two months later.
+  Most days that means **TypeScript and Next.js** on the web, **Python** for automation and data, and **LLM agents** wired into real workflows with tests and human checkpoints.
+
+  I run [Hertwave](https://hertwave.com), a small studio in São Paulo that ships sites and software for real clients. I'm also finishing a law degree at Mackenzie, which shapes how I scope anything that touches personal data or a contract.
+
+  Most of my work lives in private repositories. Below are case studies that explain what each product does, how it is built and what I decided, plus the code I keep public.
+
+# Big cards with a preview image.
+featured:
+  - name: quemapoiaquem
+    case: quemapoiaquem
+    live: "https://quemapoiaquem.com.br"
+    image: assets/previews/quemapoiaquem.jpg
+    text: |
+      A neutral public record of who backed whom in Brazil's 2026 presidential runoff, every endorsement linked to its source. Started on 2026-10-05, live the next day, frozen after the vote: 74,000 visits and about 518,000 views on X by 2026-10-25.
+    focus: "Zero to production in one day · AI triage with human review · Neutrality rules enforced in the data model"
+    stack: "Next.js · TypeScript · Postgres (Neon) · Cloudflare R2 · Playwright · Claude"
+  - name: Valor de Imóveis
+    case: valor-imoveis
+    live: "https://valordeimoveis.com.br"
+    image: assets/previews/valor-imoveis.jpg
+    text: |
+      The platform behind a live real-estate agency: public site, admin, watermarked photos, XML feeds to Brazil's major listing portals and a CRM. Built multi-tenant from the schema up, with Postgres row-level security.
+    focus: "Full-stack platform · Portal integrations · Tenant isolation"
+    stack: "Next.js · TypeScript · Supabase / Postgres · Cloudflare R2 · Vercel AI Gateway"
+
+# Rows with an icon.
+systems:
+  title: AI systems and internal tools
+  items:
+    - name: Jarvis
+      case: jarvis
+      icon: assets/icons/voice.svg
+      text: "Local-first voice assistant for Windows: Whisper wake word, local TTS, Claude Code acting on the PC through typed MCP tools that ask for confirmation."
+      stack: "Python · Claude Code + MCP · faster-whisper · Tauri + React · Ollama · SQLite"
+    - name: Hertwave OS
+      case: hertwave-os
+      icon: assets/icons/factory.svg
+      text: "The studio's agent factory: Claude Code agents build client sites, a critic scores each render on a 9-part rubric and a fix is kept only if the score rises."
+      stack: "Claude Code agents · Node.js · Playwright · Next.js · Tailwind v4"
+    - name: Contratos
+      case: contratos
+      icon: assets/icons/contract.svg
+      text: "Turns property records and ID scans into full real-estate contracts: 13 types, faithful to the agencies' own templates, with a human check on the deal sheet before the .docx."
+      stack: "Python · Claude · JSON Schema · docxtpl"
+    - name: Quant research
+      case: quant-research
+      icon: assets/icons/research.svg
+      text: "Systematic research for crypto and US equities: hypotheses registered before testing, a sealed holdout, a blind reviewer agent and paper trading with no orders."
+      stack: "Python · Polars · statsmodels · pytest + Hypothesis · Claude Code agents"
+
+web:
+  title: Sites shipped for clients and the studio
+  items:
+    - {name: hertwave.com, url: "https://hertwave.com", text: "Studio site: GLSL hero, 3D carousel in React Three Fiber, PT/EN."}
+    - {name: nowimoveis.com, url: "https://nowimoveis.com", text: "Video-first real estate: each YouTube tour becomes a property page in chapters, scroll drives the playhead."}
+    - {name: nowmarketing.com.br, url: "https://nowmarketing.com.br", text: "Agency site with a 3D opening scored to scroll."}
+    - {name: oktal.com.br, url: "https://oktal.com.br", text: "Tech gadget store built as a studio portfolio piece."}
+    - {name: jimmyk.com.br, url: "https://www.jimmyk.com.br", text: "One-page site for an old-school barbershop, built to drive WhatsApp bookings."}
+
+open_source:
+  title: Public source
+  items:
+    - name: allanhert-portfolio
+      icon: assets/icons/webgl.svg
+      text: "My site and WebGL lab: GPU reaction-diffusion, SDF raymarching and ordered dithering, each one a hand-written shader."
+      stack: "Next.js · Three.js · GLSL · Playwright"
+
+toolkit:
+  icons: "ts,js,react,nextjs,nodejs,python,postgres,tailwind,threejs,vercel,git,linux"
+  lines:
+    - "**Languages:** TypeScript · JavaScript · Python · SQL · GLSL"
+    - "**Web:** React · Next.js · Node.js · Tailwind · Three.js / React Three Fiber"
+    - "**Data and infra:** Postgres · Neon · Supabase · Vercel · Linux VPS"
+    - "**AI:** Claude Code agents · MCP servers · LLM extraction pipelines · local speech (Whisper, TTS)"
+    - "**Quality:** Playwright · pytest · Vitest · axe-core"
+
+how_i_work:
+  - "Start from the real problem and the person using it, then pick the smallest thing that can go live."
+  - "Write the decision down before the code: each project keeps its plan, phases and decision log in the repo."
+  - "Agents do the heavy lifting, people approve anything irreversible: payments, messages, publishing."
+  - "Test what can break, measure what ships, and keep secrets and personal data out of git."
+
+footer: "Most client work is private. Case studies describe it without the source."

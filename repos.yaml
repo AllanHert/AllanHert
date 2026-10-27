@@ -1,0 +1,57 @@
+# Metadata of the public repositories on this account, applied by scripts/polish_repos.py.
+# Private repositories (on the Hertwave account) take their description and site from the local project
+# registry instead (--portfolio), so their names never land in this public file.
+
+account:
+  login: AllanHert
+  name: Allan Hert
+  bio: "Software engineer: full-stack web and AI agents. Founder of Hertwave. Open to remote SWE / AI roles."
+  company: "@Hertwave"
+  blog: "https://allanhert.com"
+  location: "São Paulo, Brazil"
+  twitter_username: HertAllan
+  hireable: true
+
+# Case-study repos have no code: no wiki, no projects, no issues.
+case_defaults: {has_wiki: false, has_projects: false, has_issues: false}
+
+repos:
+  AllanHert:
+    description: "Profile README, generated from profile.yaml"
+    homepage: "https://allanhert.com"
+    topics: [profile, readme]
+  allanhert-portfolio:
+    description: "My site and WebGL lab: Next.js, Three.js and hand-written GLSL (reaction-diffusion, SDF raymarching, dithering)."
+    homepage: "https://allanhert.com"
+    topics: [nextjs, typescript, threejs, react-three-fiber, glsl, webgl, shaders, creative-coding, portfolio, playwright]
+  hertwave-site:
+    description: "July 2026 snapshot of the Hertwave studio site (Next.js, R3F, GLSL). The live site moved on: hertwave.com"
+    homepage: "https://hertwave.com"
+    archived: true
+  quemapoiaquem:
+    case: true
+    description: "Case study: a neutral public record, with proof, of who backed whom in Brazil's 2026 presidential runoff"
+    homepage: "https://quemapoiaquem.com.br"
+    topics: [nextjs, typescript, postgres, row-level-security, vercel, cloudflare-r2, playwright, human-in-the-loop, civic-tech, case-study]
+  valor-imoveis:
+    case: true
+    description: "Case study: multi-tenant real-estate portal with portal XML feeds, watermarked photos, CRM and Postgres RLS"
+    homepage: "https://valordeimoveis.com.br"
+    topics: [real-estate, multi-tenant, nextjs, typescript, supabase, postgres-rls, xml-feeds, cloudflare-r2, crm, case-study]
+  jarvis:
+    case: true
+    description: "Case study: local-first Windows voice assistant with Claude Code as the brain and confirmed, typed PC actions"
+    topics: [voice-assistant, claude-code, mcp, speech-recognition, whisper, text-to-speech, tauri, python, local-first, case-study]
+  hertwave-os:
+    case: true
+    description: "Case study: internal site factory where Claude Code agents build client sites, then critique and fix them"
+    homepage: "https://hertwave.com"
+    topics: [claude-code, ai-agents, multi-agent, llm-as-judge, design-systems, web-design, playwright, nextjs, developer-tools, case-study]
+  quant-research:
+    case: true
+    description: "Case study: pre-registered quant research for crypto and US equities, with blind review by Claude agents."
+    topics: [quantitative-finance, backtesting, research-methodology, python, claude-code, multi-agent, paper-trading, reproducibility, case-study]
+  contratos:
+    case: true
+    description: "Case study: reads real-estate deal documents and generates the full Brazilian contract as Word file"
+    topics: [legaltech, document-automation, docx, python, docxtpl, llm, human-in-the-loop, real-estate, contract-generation, case-study]

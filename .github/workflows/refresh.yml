@@ -1,0 +1,38 @@
+name: Refresh profile README
+
+# Weekly: re-render README.md from profile.yaml, hide live links that are down and case-study links
+# whose repo is not public. Never pushes to main: when the README changes it opens a PR to approve.
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"   # Mondays 06:17 in São Paulo
+  push:
+    branches: [main]
+    paths: [profile.yaml, scripts/build_readme.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml==6.0.2
+      - run: python scripts/build_readme.py --check-links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peter-evans/create-pull-request@v8
+        with:
+          branch: bot/refresh-readme
+          delete-branch: true
+          commit-message: "docs: refresh profile README"
+          title: "Refresh profile README"
+          body: |
+            Re-rendered from `profile.yaml` by the weekly workflow. The run log lists any link that was hidden (site down or case-study repo not public).
+          add-paths: README.md

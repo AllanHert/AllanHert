@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- Source of assets/banner.png. Render: scripts/render_banner.ps1 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Geist+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --bg: #05070c; --fg: #f1f1ec; --muted: #9a9ca3; --accent: #36dede; }
+  html, body { margin: 0; background: var(--bg); }
+  .b { position: relative; width: 1280px; height: 320px; overflow: hidden; background: var(--bg); }
+  canvas { position: absolute; inset: 0; }
+  .t { position: absolute; left: 72px; top: 64px; }
+  .eyebrow { font: 500 14px/1 "Geist Mono", monospace; letter-spacing: .32em; color: var(--accent); text-transform: uppercase; }
+  h1 { margin: 22px 0 0; font: 700 76px/1 "Geist", sans-serif; letter-spacing: -.035em; color: var(--fg); }
+  .sub { margin-top: 22px; font: 400 21px/1.4 "Geist", sans-serif; color: var(--muted); }
+  .sub b { color: var(--fg); font-weight: 600; }
+  .status { position: absolute; left: 72px; bottom: 40px; font: 400 14px/1 "Geist Mono", monospace; color: var(--muted); letter-spacing: .04em; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 10px; vertical-align: 1px; box-shadow: 0 0 10px var(--accent); }
+</style>
+</head>
+<body>
+<div class="b">
+  <canvas id="c" width="2560" height="640" style="width:1280px;height:320px"></canvas>
+  <div class="t">
+    <div class="eyebrow">Software engineer · Full-stack · AI</div>
+    <h1>Allan Hert</h1>
+    <div class="sub">I build products that ship: <b>web platforms</b>, <b>AI agents</b> and the systems around them.</div>
+  </div>
+  <div class="status"><span class="dot"></span>Open to remote roles · São Paulo, UTC-3</div>
+</div>
+<script>
+  // Same particle field as allanhert.com: density grows to the right.
+  let s = 7;
+  const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  const c = document.getElementById('c').getContext('2d');
+  c.scale(2, 2);
+  for (let i = 0; i < 2600; i++) {
+    const x = 1280 * Math.pow(r(), 0.38);
+    const y = 320 * r();
+    if (x < 640) continue;
+    const a = Math.min(1, (x - 640) / 640) * (0.25 + 0.75 * r());
+    c.fillStyle = `rgba(54, 222, 222, ${a.toFixed(3)})`;
+    const d = r() < 0.12 ? 2 : 1.2;
+    c.fillRect(x, y, d, d);
+  }
+</script>
+</body>
+</html>
