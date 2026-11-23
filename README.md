@@ -86,7 +86,7 @@ The platform behind a live real-estate agency: public site, admin, watermarked p
 | [nowimoveis.com](https://nowimoveis.com) | Video-first real estate: each YouTube tour becomes a property page in chapters, scroll drives the playhead. |
 | [nowmarketing.com.br](https://nowmarketing.com.br) | Agency site with a 3D opening scored to scroll. |
 | [oktal.com.br](https://oktal.com.br) | Tech gadget store built as a studio portfolio piece. |
-| [jimmyk.com.br](https://www.jimmyk.com.br) | One-page site for an old-school barbershop, built to drive WhatsApp bookings. |
+| jimmyk.com.br | One-page site for an old-school barbershop, built to drive WhatsApp bookings. |
 
 ## Public source
 
